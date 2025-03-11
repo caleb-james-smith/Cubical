@@ -21,31 +21,38 @@ fun AlgorithmCard(algorithm: Algorithm) {
             .padding(8.dp),
         elevation = CardDefaults.cardElevation(defaultElevation = 4.dp)
     ) {
-        Column(
+        Row(
             modifier = Modifier.padding(16.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.SpaceBetween
-            ) {
-                Text(text = algorithm.name,         fontSize = 16.sp)
-                Text(text = algorithm.group,        fontSize = 16.sp)
-                Text(text = algorithm.long_name,    fontSize = 16.sp)
-            }
-            Spacer(modifier = Modifier.height(4.dp))
             Image(
                 painter = painterResource(id = getImageResource(algorithm.name)),
                 contentDescription = algorithm.name,
                 modifier = Modifier.size(120.dp)
             )
-            Spacer(modifier = Modifier.height(4.dp))
-            Row() {
-                Text(text = algorithm.moves,
-                    fontSize = 16.sp,
-                    textAlign = TextAlign.Start,
+            Column(
+                modifier = Modifier.padding(16.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    Text(text = algorithm.name,         fontSize = 16.sp)
+                    Text(text = algorithm.group,        fontSize = 16.sp)
+                    Text(text = algorithm.long_name,    fontSize = 16.sp)
+                }
+                Spacer(modifier = Modifier.height(4.dp))
+                Row(
                     modifier = Modifier.fillMaxWidth()
-                )
+                ) {
+                    Text(
+                        text = algorithm.moves,
+                        fontSize = 16.sp,
+                        textAlign = TextAlign.Start,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
             }
         }
     }
