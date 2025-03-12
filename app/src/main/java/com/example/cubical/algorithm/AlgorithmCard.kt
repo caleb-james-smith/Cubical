@@ -38,9 +38,9 @@ fun AlgorithmCard(algorithm: Algorithm) {
                     modifier = Modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
-                    Text(text = algorithm.name,         fontSize = 16.sp)
-                    Text(text = algorithm.group,        fontSize = 16.sp)
-                    Text(text = algorithm.long_name,    fontSize = 16.sp)
+                    Text(text = algorithm.name,     fontSize = 16.sp)
+                    Text(text = algorithm.group,    fontSize = 16.sp)
+                    Text(text = algorithm.nickname, fontSize = 16.sp)
                 }
                 Spacer(modifier = Modifier.height(4.dp))
                 Row(
