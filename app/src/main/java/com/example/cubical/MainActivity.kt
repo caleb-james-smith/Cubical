@@ -14,7 +14,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.cubical.ui.theme.CubicalTheme
 import com.example.cubical.algorithm.Algorithm
 import com.example.cubical.algorithm.AlgorithmScreen
-import com.example.cubical.algorithm.AlgorithmData
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -46,7 +45,6 @@ fun CreateAlgorithmScreen(context: Context) {
         }
     ) { paddingValues ->
         AlgorithmScreen(
-//            algorithms = AlgorithmData.ollAlgorithms,
             algorithms = algorithms,
             modifier = Modifier.padding(paddingValues)
         )
@@ -58,20 +56,4 @@ fun loadAlgorithmsFromJson(context: Context): List<Algorithm> {
     val reader = InputStreamReader(inputStream)
     val type = object : TypeToken<List<Algorithm>>() {}.type
     return Gson().fromJson(reader, type)
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello, $name! Welcome to Cubical.",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CubicalTheme {
-        Greeting("Cuber")
-    }
 }
