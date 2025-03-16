@@ -68,6 +68,8 @@ fun getImageResource(name: String): Int {
         "OLL_25" -> R.drawable.oll_25
         "OLL_26" -> R.drawable.oll_26
         "OLL_27" -> R.drawable.oll_27
+        "OLL_33" -> R.drawable.oll_33
+        "OLL_45" -> R.drawable.oll_45
         else -> R.drawable.ic_placeholder // placeholder image
     }
 }
