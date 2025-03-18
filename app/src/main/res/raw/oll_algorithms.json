@@ -1,11 +1,19 @@
 [
-  {"type": "OLL", "group": "Cross",     "name": "OLL_26", "nickname": "OCLL6",  "moves": "(R U2' R' U') (R U' R')"},
-  {"type": "OLL", "group": "Cross",     "name": "OLL_27", "nickname": "OCLL7",  "moves": "(R U R' U) (R U2' R')"},
-  {"type": "OLL", "group": "Cross",     "name": "OLL_21", "nickname": "OCLL1",  "moves": "(R U2' R' U') (R U R' U') (R U' R')"},
-  {"type": "OLL", "group": "Cross",     "name": "OLL_22", "nickname": "OCLL2",  "moves": "R U2' R2' U' R2 U' R2' U2' R"},
-  {"type": "OLL", "group": "Cross",     "name": "OLL_24", "nickname": "OCLL4",  "moves": "(r U R' U') (r' F R F')"},
-  {"type": "OLL", "group": "Cross",     "name": "OLL_25", "nickname": "OCLL5",  "moves": "y F' (r U R' U') r' F R"},
-  {"type": "OLL", "group": "Cross",     "name": "OLL_23", "nickname": "OCLL3",  "moves": "y2 R2 D' R U2' R' D R U2' R"},
-  {"type": "OLL", "group": "T-Shapes",  "name": "OLL_33", "nickname": "T1",     "moves": "(R U R' U') (R' F R F')"},
-  {"type": "OLL", "group": "T-Shapes",  "name": "OLL_45", "nickname": "T2",     "moves": "F (R U R' U') F'"}
+  {"type": "OLL", "group": "Cross",             "name": "OLL_26", "nickname": "OCLL6",  "moves": "(R U2' R' U') (R U' R')"},
+  {"type": "OLL", "group": "Cross",             "name": "OLL_27", "nickname": "OCLL7",  "moves": "(R U R' U) (R U2' R')"},
+  {"type": "OLL", "group": "Cross",             "name": "OLL_21", "nickname": "OCLL1",  "moves": "(R U2' R' U') (R U R' U') (R U' R')"},
+  {"type": "OLL", "group": "Cross",             "name": "OLL_22", "nickname": "OCLL2",  "moves": "R U2' R2' U' R2 U' R2' U2' R"},
+  {"type": "OLL", "group": "Cross",             "name": "OLL_24", "nickname": "OCLL4",  "moves": "(r U R' U') (r' F R F')"},
+  {"type": "OLL", "group": "Cross",             "name": "OLL_25", "nickname": "OCLL5",  "moves": "y F' (r U R' U') r' F R"},
+  {"type": "OLL", "group": "Cross",             "name": "OLL_23", "nickname": "OCLL3",  "moves": "y2 R2 D' R U2' R' D R U2' R"},
+  {"type": "OLL", "group": "T-Shapes",          "name": "OLL_33", "nickname": "T1",     "moves": "(R U R' U') (R' F R F')"},
+  {"type": "OLL", "group": "T-Shapes",          "name": "OLL_45", "nickname": "T2",     "moves": "F (R U R' U') F'"},
+  {"type": "OLL", "group": "Squares",           "name": "OLL_05", "nickname": "S1",     "moves": "(r' U2' R U R' U r)"},
+  {"type": "OLL", "group": "Squares",           "name": "OLL_06", "nickname": "S2",     "moves": "(r U2' R' U' R U' r')"},
+  {"type": "OLL", "group": "C-Shapes",          "name": "OLL_34", "nickname": "C1",     "moves": "(R U R2' U') (R' F R U) (R U' F')"},
+  {"type": "OLL", "group": "C-Shapes",          "name": "OLL_46", "nickname": "C2",     "moves": "R' U' (R' F R F') U R"},
+  {"type": "OLL", "group": "W-Shapes",          "name": "OLL_36", "nickname": "W1",     "moves": "y2 (R U R' F') (R U R' U') (R' F R U') (R' F R F')"},
+  {"type": "OLL", "group": "W-Shapes",          "name": "OLL_38", "nickname": "W2",     "moves": "(R U R' U) (R U' R' U') (R' F R F')"},
+  {"type": "OLL", "group": "Corners Oriented",  "name": "OLL_28", "nickname": "E1",     "moves": "(r U R' U') M (U R U' R')"},
+  {"type": "OLL", "group": "Corners Oriented",  "name": "OLL_57", "nickname": "E2",     "moves": "(R U R' U') M' (U R U' r')"}
 ]
