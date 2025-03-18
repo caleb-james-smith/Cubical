@@ -12,6 +12,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.style.*
+import androidx.compose.ui.layout.ContentScale
 
 @Composable
 fun AlgorithmCard(algorithm: Algorithm) {
@@ -28,7 +29,8 @@ fun AlgorithmCard(algorithm: Algorithm) {
             Image(
                 painter = painterResource(id = getImageResource(algorithm.name)),
                 contentDescription = algorithm.name,
-                modifier = Modifier.size(120.dp)
+                modifier = Modifier.size(80.dp).padding(8.dp),
+                contentScale = ContentScale.Fit  // maintain aspect ratio
             )
             Column(
                 modifier = Modifier.padding(16.dp),
