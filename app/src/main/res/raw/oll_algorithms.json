@@ -15,5 +15,9 @@
   {"type": "OLL", "group": "W-Shapes",          "name": "OLL_36", "nickname": "W1",     "moves": "y2 (R U R' F') (R U R' U') (R' F R U') (R' F R F')"},
   {"type": "OLL", "group": "W-Shapes",          "name": "OLL_38", "nickname": "W2",     "moves": "(R U R' U) (R U' R' U') (R' F R F')"},
   {"type": "OLL", "group": "Corners Oriented",  "name": "OLL_28", "nickname": "E1",     "moves": "(r U R' U') M (U R U' R')"},
-  {"type": "OLL", "group": "Corners Oriented",  "name": "OLL_57", "nickname": "E2",     "moves": "(R U R' U') M' (U R U' r')"}
+  {"type": "OLL", "group": "Corners Oriented",  "name": "OLL_57", "nickname": "E2",     "moves": "(R U R' U') M' (U R U' r')"},
+  {"type": "OLL", "group": "P-Shapes",          "name": "OLL_31", "nickname": "P1",     "moves": "(R' U' F) (U R U' R') F' R"},
+  {"type": "OLL", "group": "P-Shapes",          "name": "OLL_32", "nickname": "P2",     "moves": "(R U B') (U' R' U) (R B R')"},
+  {"type": "OLL", "group": "P-Shapes",          "name": "OLL_43", "nickname": "P3",     "moves": "y R' (U' F' U F) R"},
+  {"type": "OLL", "group": "P-Shapes",          "name": "OLL_44", "nickname": "P4",     "moves": "f (R U R' U') f'"}
 ]
