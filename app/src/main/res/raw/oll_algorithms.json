@@ -35,5 +35,11 @@
   {"type": "OLL", "group": "Awkward Shapes",        "name": "OLL_29", "nickname": "A1",     "moves": "(R U R' U') (R U' R') (F' U' F) (R U R')"},
   {"type": "OLL", "group": "Awkward Shapes",        "name": "OLL_30", "nickname": "A2",     "moves": "(F R' F) (R2 U' R' U') (R U R' F2)"},
   {"type": "OLL", "group": "Awkward Shapes",        "name": "OLL_41", "nickname": "A3",     "moves": "(R U R' U) (R U2' R') F (R U R' U') F'"},
-  {"type": "OLL", "group": "Awkward Shapes",        "name": "OLL_42", "nickname": "A4",     "moves": "(R' U' R U') (R' U2' R) F (R U R' U') F'"}
+  {"type": "OLL", "group": "Awkward Shapes",        "name": "OLL_42", "nickname": "A4",     "moves": "(R' U' R U') (R' U2' R) F (R U R' U') F'"},
+  {"type": "OLL", "group": "L-Shapes",              "name": "OLL_48", "nickname": "L2",     "moves": "F (R U R' U') (R U R' U') F'"},
+  {"type": "OLL", "group": "L-Shapes",              "name": "OLL_47", "nickname": "L1",     "moves": "F' (L' U' L U) (L' U' L U) F"},
+  {"type": "OLL", "group": "L-Shapes",              "name": "OLL_49", "nickname": "L3",     "moves": "r U' r2' U r2 U r2' U' r"},
+  {"type": "OLL", "group": "L-Shapes",              "name": "OLL_50", "nickname": "L4",     "moves": "r' U r2 U' r2' U' r2 U r'"},
+  {"type": "OLL", "group": "L-Shapes",              "name": "OLL_53", "nickname": "L5",     "moves": "y r' U2' (R U R' U') (R U R' U) r"},
+  {"type": "OLL", "group": "L-Shapes",              "name": "OLL_54", "nickname": "L6",     "moves": "y' (r U2' R' U') (R U R' U') (R U' r')"}
 ]
