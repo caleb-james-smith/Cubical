@@ -41,5 +41,11 @@
   {"type": "OLL", "group": "L-Shapes",              "name": "OLL_49", "nickname": "L3",     "moves": "r U' r2' U r2 U r2' U' r"},
   {"type": "OLL", "group": "L-Shapes",              "name": "OLL_50", "nickname": "L4",     "moves": "r' U r2 U' r2' U' r2 U r'"},
   {"type": "OLL", "group": "L-Shapes",              "name": "OLL_53", "nickname": "L5",     "moves": "y r' U2' (R U R' U') (R U R' U) r"},
-  {"type": "OLL", "group": "L-Shapes",              "name": "OLL_54", "nickname": "L6",     "moves": "y' (r U2' R' U') (R U R' U') (R U' r')"}
+  {"type": "OLL", "group": "L-Shapes",              "name": "OLL_54", "nickname": "L6",     "moves": "y' (r U2' R' U') (R U R' U') (R U' r')"},
+  {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_07", "nickname": "B1",     "moves": "(r U R' U) (R U2' r')"},
+  {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_08", "nickname": "B2",     "moves": "(r' U' R U') (R' U2' r)"},
+  {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_11", "nickname": "B3",     "moves": "y2 r' (R2 U R' U) (R U2' R' U) M'"},
+  {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_12", "nickname": "B4",     "moves": "y' M' (R' U' R U') (R' U2' R U') M"},
+  {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_39", "nickname": "B5",     "moves": "(L F') (L' U' L U) (F U' L')"},
+  {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_40", "nickname": "B6",     "moves": "(R' F) (R U R' U') (F' U R)"}
 ]
