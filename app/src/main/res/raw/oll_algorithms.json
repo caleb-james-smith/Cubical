@@ -47,5 +47,13 @@
   {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_11", "nickname": "B3",     "moves": "y2 r' (R2 U R' U) (R U2' R' U) M'"},
   {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_12", "nickname": "B4",     "moves": "y' M' (R' U' R U') (R' U2' R U') M"},
   {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_39", "nickname": "B5",     "moves": "(L F') (L' U' L U) (F U' L')"},
-  {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_40", "nickname": "B6",     "moves": "(R' F) (R U R' U') (F' U R)"}
+  {"type": "OLL", "group": "Lightning Bolts",       "name": "OLL_40", "nickname": "B6",     "moves": "(R' F) (R U R' U') (F' U R)"},
+  {"type": "OLL", "group": "Dots",                  "name": "OLL_01", "nickname": "O1",     "moves": "(R U2') (R2' F R F') U2' (R' F R F')"},
+  {"type": "OLL", "group": "Dots",                  "name": "OLL_02", "nickname": "O2",     "moves": "F (R U R' U') F' f (R U R' U') f'"},
+  {"type": "OLL", "group": "Dots",                  "name": "OLL_03", "nickname": "O3",     "moves": "f (R U R' U') f' U' F (R U R' U') F'"},
+  {"type": "OLL", "group": "Dots",                  "name": "OLL_04", "nickname": "O4",     "moves": "f (R U R' U') f' U F (R U R' U') F'"},
+  {"type": "OLL", "group": "Dots",                  "name": "OLL_18", "nickname": "O6",     "moves": "y (R U2') (R2' F R F') (U2' M') (U R U' r')"},
+  {"type": "OLL", "group": "Dots",                  "name": "OLL_19", "nickname": "O7",     "moves": "(M U) (R U R' U') M' (R' F R F')"},
+  {"type": "OLL", "group": "Dots",                  "name": "OLL_17", "nickname": "O5",     "moves": "(R U R' U) (R' F R F') U2' (R' F R F')"},
+  {"type": "OLL", "group": "Dots",                  "name": "OLL_20", "nickname": "O8",     "moves": "(M U) (R U R' U') M2' (U R U' r')"}
 ]
