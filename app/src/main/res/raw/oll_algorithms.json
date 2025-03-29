@@ -2,7 +2,7 @@
   {"type": "OLL", "group": "Crosses",               "name": "OLL_26", "nickname": "OCLL6",  "moves": "(R U2' R' U') (R U' R')"},
   {"type": "OLL", "group": "Crosses",               "name": "OLL_27", "nickname": "OCLL7",  "moves": "(R U R' U) (R U2' R')"},
   {"type": "OLL", "group": "Crosses",               "name": "OLL_21", "nickname": "OCLL1",  "moves": "(R U2' R' U') (R U R' U') (R U' R')"},
-  {"type": "OLL", "group": "Crosses",               "name": "OLL_22", "nickname": "OCLL2",  "moves": "R U2' R2' U' R2 U' R2' U2' R"},
+  {"type": "OLL", "group": "Crosses",               "name": "OLL_22", "nickname": "OCLL2",  "moves": "(R U2') (R2' U' R2 U') (R2' U2' R)"},
   {"type": "OLL", "group": "Crosses",               "name": "OLL_24", "nickname": "OCLL4",  "moves": "(r U R' U') (r' F R F')"},
   {"type": "OLL", "group": "Crosses",               "name": "OLL_25", "nickname": "OCLL5",  "moves": "y F' (r U R' U') r' F R"},
   {"type": "OLL", "group": "Crosses",               "name": "OLL_23", "nickname": "OCLL3",  "moves": "y2 (R2 D') (R U2' R' D) (R U2' R)"},
