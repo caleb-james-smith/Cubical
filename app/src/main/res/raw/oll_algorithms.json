@@ -5,7 +5,7 @@
   {"type": "OLL", "group": "Crosses",               "name": "OLL_22", "nickname": "OCLL2",  "moves": "R U2' R2' U' R2 U' R2' U2' R"},
   {"type": "OLL", "group": "Crosses",               "name": "OLL_24", "nickname": "OCLL4",  "moves": "(r U R' U') (r' F R F')"},
   {"type": "OLL", "group": "Crosses",               "name": "OLL_25", "nickname": "OCLL5",  "moves": "y F' (r U R' U') r' F R"},
-  {"type": "OLL", "group": "Crosses",               "name": "OLL_23", "nickname": "OCLL3",  "moves": "y2 R2 D' R U2' R' D R U2' R"},
+  {"type": "OLL", "group": "Crosses",               "name": "OLL_23", "nickname": "OCLL3",  "moves": "y2 (R2 D') (R U2' R' D) (R U2' R)"},
   {"type": "OLL", "group": "T-Shapes",              "name": "OLL_33", "nickname": "T1",     "moves": "(R U R' U') (R' F R F')"},
   {"type": "OLL", "group": "T-Shapes",              "name": "OLL_45", "nickname": "T2",     "moves": "F (R U R' U') F'"},
   {"type": "OLL", "group": "Squares",               "name": "OLL_05", "nickname": "S1",     "moves": "(r' U2' R U R' U r)"},
