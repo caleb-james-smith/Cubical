@@ -4,9 +4,11 @@ import androidx.compose.runtime.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.ui.text.font.*
+import androidx.compose.ui.text.style.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.compose.ui.graphics.Color
 
 @Composable
 fun AlgorithmGroup(
@@ -22,14 +24,17 @@ fun AlgorithmGroup(
             .padding(8.dp)
     ) {
         // Group Button (Dropdown Toggle)
-        Button(
+        OutlinedButton(
             onClick = { expanded = !expanded },
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(
-                text = groupName,
-                fontSize = 18.sp,
-                fontWeight = FontWeight.Bold
+                text = "</> $groupName",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Bold,
+                textAlign = TextAlign.Left,
+                color = MaterialTheme.colorScheme.onSurface,
+                modifier = Modifier.fillMaxWidth()
             )
         }
 

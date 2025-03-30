@@ -10,8 +10,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.text.style.*
 import androidx.compose.ui.text.font.*
+import androidx.compose.ui.text.style.*
 import androidx.compose.ui.layout.ContentScale
 
 @Composable
@@ -41,7 +41,7 @@ fun AlgorithmCard(algorithm: Algorithm) {
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Text(text = algorithm.name,     fontSize = 16.sp, fontWeight = FontWeight.Bold)
-                    Text(text = algorithm.group,    fontSize = 16.sp, fontWeight = FontWeight.Bold)
+//                    Text(text = algorithm.group,    fontSize = 16.sp, fontWeight = FontWeight.Bold)
                     Text(text = algorithm.nickname, fontSize = 16.sp, fontWeight = FontWeight.Bold)
                 }
                 Spacer(modifier = Modifier.height(4.dp))

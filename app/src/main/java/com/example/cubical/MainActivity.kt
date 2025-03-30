@@ -12,13 +12,12 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.Modifier
 import com.example.cubical.ui.theme.CubicalTheme
 import com.example.cubical.algorithm.Algorithm
-//import com.example.cubical.algorithm.AlgorithmScreen
+import com.example.cubical.algorithm.AlgorithmScreen
 import com.example.cubical.algorithm.AlgorithmGroup
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.InputStreamReader
-
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
