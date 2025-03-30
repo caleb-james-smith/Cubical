@@ -8,12 +8,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.Modifier
 import com.example.cubical.ui.theme.CubicalTheme
 import com.example.cubical.algorithm.Algorithm
-import com.example.cubical.algorithm.AlgorithmScreen
+//import com.example.cubical.algorithm.AlgorithmScreen
 import com.example.cubical.algorithm.AlgorithmGroup
 import android.content.Context
 import com.google.gson.Gson
