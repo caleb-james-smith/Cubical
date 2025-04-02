@@ -8,7 +8,6 @@ import androidx.compose.ui.text.style.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.compose.ui.graphics.Color
 
 @Composable
 fun AlgorithmGroup(
@@ -29,7 +28,7 @@ fun AlgorithmGroup(
             modifier = Modifier.fillMaxWidth()
         ) {
             Text(
-                text = "</> $groupName",
+                text = groupName,
                 fontSize = 20.sp,
                 fontWeight = FontWeight.Bold,
                 textAlign = TextAlign.Left,

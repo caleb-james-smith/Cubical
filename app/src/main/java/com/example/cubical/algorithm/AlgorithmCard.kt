@@ -41,7 +41,6 @@ fun AlgorithmCard(algorithm: Algorithm) {
                     horizontalArrangement = Arrangement.SpaceBetween
                 ) {
                     Text(text = algorithm.name,     fontSize = 16.sp, fontWeight = FontWeight.Bold)
-//                    Text(text = algorithm.group,    fontSize = 16.sp, fontWeight = FontWeight.Bold)
                     Text(text = algorithm.nickname, fontSize = 16.sp, fontWeight = FontWeight.Bold)
                 }
                 Spacer(modifier = Modifier.height(4.dp))
