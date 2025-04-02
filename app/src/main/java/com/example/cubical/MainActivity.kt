@@ -7,11 +7,13 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.Modifier
 import com.example.cubical.ui.theme.CubicalTheme
 import com.example.cubical.algorithm.Algorithm
 import com.example.cubical.algorithm.AlgorithmScreen
+import com.example.cubical.algorithm.AlgorithmGroup
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -35,6 +37,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun CreateAlgorithmScreen(context: Context) {
     val algorithms = loadAlgorithmsFromJson(context)
+    val groupedAlgorithms = algorithms.groupBy { it.group }
+
     Scaffold(
         topBar = {
             TopAppBar(
@@ -42,10 +46,19 @@ fun CreateAlgorithmScreen(context: Context) {
             )
         }
     ) { paddingValues ->
-        AlgorithmScreen(
+        /*AlgorithmScreen(
             algorithms = algorithms,
             modifier = Modifier.padding(paddingValues)
-        )
+        )*/
+        LazyColumn(
+            modifier = Modifier.padding(paddingValues)
+        ) {
+            groupedAlgorithms.forEach { (groupName, algorithms) ->
+                item {
+                    AlgorithmGroup(groupName = groupName, algorithms = algorithms)
+                }
+            }
+        }
     }
 }
 
