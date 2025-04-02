@@ -1,5 +1,8 @@
 # Cubical
-Rubik's Cube Algorithm Android App built using Android Studio, Kotlin, and Jetpack Compose.
+
+Rubik's Cube Algorithm Android app built using Android Studio, Kotlin, and Jetpack Compose.
+
+## Test app on an Android phone
 
 To test your app on an Android phone (for example, Google Pixel 7) by connecting to your computer (for example, Macbook),
 follow these steps:
