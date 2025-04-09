@@ -18,6 +18,8 @@ import com.example.cubical.algorithm.Algorithm
 import com.example.cubical.algorithm.AlgorithmScreen
 import com.example.cubical.algorithm.AlgorithmGroup
 import com.example.cubical.algorithm.HomeScreen
+import com.example.cubical.algorithm.CreateOLLScreen
+import com.example.cubical.algorithm.CreatePLLScreen
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -45,7 +47,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+/*@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CreateOLLScreen(context: Context) {
     val algorithms = loadAlgorithmsFromJson(context, R.raw.oll_algorithms)
@@ -58,10 +60,10 @@ fun CreateOLLScreen(context: Context) {
             )
         }
     ) { paddingValues ->
-        /*AlgorithmScreen(
+        *//*AlgorithmScreen(
             algorithms = algorithms,
             modifier = Modifier.padding(paddingValues)
-        )*/
+        )*//*
         LazyColumn(
             modifier = Modifier.padding(paddingValues)
         ) {
@@ -72,9 +74,9 @@ fun CreateOLLScreen(context: Context) {
             }
         }
     }
-}
+}*/
 
-@OptIn(ExperimentalMaterial3Api::class)
+/*@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CreatePLLScreen(context: Context) {
     val algorithms = loadAlgorithmsFromJson(context, R.raw.pll_algorithms)
@@ -87,10 +89,10 @@ fun CreatePLLScreen(context: Context) {
             )
         }
     ) { paddingValues ->
-        /*AlgorithmScreen(
+        *//*AlgorithmScreen(
             algorithms = algorithms,
             modifier = Modifier.padding(paddingValues)
-        )*/
+        )*//*
         LazyColumn(
             modifier = Modifier.padding(paddingValues)
         ) {
@@ -101,7 +103,7 @@ fun CreatePLLScreen(context: Context) {
             }
         }
     }
-}
+}*/
 
 fun loadAlgorithmsFromJson(context: Context, jsonResourceId: Int): List<Algorithm> {
     return try {
