@@ -36,8 +36,8 @@ class MainActivity : ComponentActivity() {
                 NavHost(navController, startDestination = "home") {
                     composable("home") { HomeScreen(navController) }
 //                    composable("moveNotation") { MoveNotationScreen() }
-                    composable("ollScreen") { CreateOLLScreen(context = LocalContext.current) } // OLL screen; please change name
-//                    composable("pllScreen") { PllScreen() }
+                    composable("ollScreen") { CreateOLLScreen(context = LocalContext.current) }
+                    composable("pllScreen") { CreatePLLScreen(context = LocalContext.current) }
                 }
             }
         }
@@ -73,9 +73,50 @@ fun CreateOLLScreen(context: Context) {
     }
 }
 
-fun loadAlgorithmsFromJson(context: Context, jsonResourceId: Int): List<Algorithm> {
-    val inputStream = context.resources.openRawResource(jsonResourceId)
-    val reader = InputStreamReader(inputStream)
-    val type = object : TypeToken<List<Algorithm>>() {}.type
-    return Gson().fromJson(reader, type)
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun CreatePLLScreen(context: Context) {
+    val algorithms = loadAlgorithmsFromJson(context, R.raw.pll_algorithms)
+    val groupedAlgorithms = algorithms.groupBy { it.group }
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("PLL Algorithms") }
+            )
+        }
+    ) { paddingValues ->
+        /*AlgorithmScreen(
+            algorithms = algorithms,
+            modifier = Modifier.padding(paddingValues)
+        )*/
+        LazyColumn(
+            modifier = Modifier.padding(paddingValues)
+        ) {
+            groupedAlgorithms.forEach { (groupName, algorithms) ->
+                item {
+                    AlgorithmGroup(groupName = groupName, algorithms = algorithms)
+                }
+            }
+        }
+    }
+}
+
+//fun loadAlgorithmsFromJson(context: Context, jsonResourceId: Int): List<Algorithm> {
+//    val inputStream = context.resources.openRawResource(jsonResourceId)
+//    val reader = InputStreamReader(inputStream)
+//    val type = object : TypeToken<List<Algorithm>>() {}.type
+//    return Gson().fromJson(reader, type)
+//}
+
+fun loadAlgorithmsFromJson(context: Context, rawResId: Int): List<Algorithm> {
+    return try {
+        val inputStream = context.resources.openRawResource(rawResId)
+        val reader = InputStreamReader(inputStream)
+        val type = object : TypeToken<List<Algorithm>>() {}.type
+        Gson().fromJson<List<Algorithm>>(reader, type) ?: emptyList()
+    } catch (e: Exception) {
+        e.printStackTrace()
+        emptyList()
+    }
 }

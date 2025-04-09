@@ -24,10 +24,10 @@ fun HomeScreen(navController: NavController) {
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center
         ) {
-            Button(onClick = { navController.navigate("moveNotation") }) {
-                Text("Move Notation")
-            }
-            Spacer(modifier = Modifier.height(16.dp))
+//            Button(onClick = { navController.navigate("moveNotation") }) {
+//                Text("Move Notation")
+//            }
+//            Spacer(modifier = Modifier.height(16.dp))
             Button(onClick = { navController.navigate("ollScreen") }) {
                 Text("OLL Algorithms")
             }
