@@ -29,6 +29,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             val navController = rememberNavController()
+            val context = LocalContext.current
             CubicalTheme {
                 /*Surface {
                     CreateOLLScreen(context = LocalContext.current)
@@ -36,8 +37,8 @@ class MainActivity : ComponentActivity() {
                 NavHost(navController, startDestination = "home") {
                     composable("home") { HomeScreen(navController) }
 //                    composable("moveNotation") { MoveNotationScreen() }
-                    composable("ollScreen") { CreateOLLScreen(context = LocalContext.current) }
-                    composable("pllScreen") { CreatePLLScreen(context = LocalContext.current) }
+                    composable("ollScreen") { CreateOLLScreen(context) }
+                    composable("pllScreen") { CreatePLLScreen(context) }
                 }
             }
         }
@@ -102,16 +103,9 @@ fun CreatePLLScreen(context: Context) {
     }
 }
 
-//fun loadAlgorithmsFromJson(context: Context, jsonResourceId: Int): List<Algorithm> {
-//    val inputStream = context.resources.openRawResource(jsonResourceId)
-//    val reader = InputStreamReader(inputStream)
-//    val type = object : TypeToken<List<Algorithm>>() {}.type
-//    return Gson().fromJson(reader, type)
-//}
-
-fun loadAlgorithmsFromJson(context: Context, rawResId: Int): List<Algorithm> {
+fun loadAlgorithmsFromJson(context: Context, jsonResourceId: Int): List<Algorithm> {
     return try {
-        val inputStream = context.resources.openRawResource(rawResId)
+        val inputStream = context.resources.openRawResource(jsonResourceId)
         val reader = InputStreamReader(inputStream)
         val type = object : TypeToken<List<Algorithm>>() {}.type
         Gson().fromJson<List<Algorithm>>(reader, type) ?: emptyList()
