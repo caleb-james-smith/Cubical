@@ -31,12 +31,12 @@ class MainActivity : ComponentActivity() {
             val navController = rememberNavController()
             CubicalTheme {
                 /*Surface {
-                    CreateAlgorithmScreen(context = LocalContext.current)
+                    CreateOLLScreen(context = LocalContext.current)
                 }*/
                 NavHost(navController, startDestination = "home") {
                     composable("home") { HomeScreen(navController) }
 //                    composable("moveNotation") { MoveNotationScreen() }
-                    composable("ollScreen") { CreateAlgorithmScreen(context = LocalContext.current) } // OLL screen; please change name
+                    composable("ollScreen") { CreateOLLScreen(context = LocalContext.current) } // OLL screen; please change name
 //                    composable("pllScreen") { PllScreen() }
                 }
             }
@@ -46,8 +46,8 @@ class MainActivity : ComponentActivity() {
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun CreateAlgorithmScreen(context: Context) {
-    val algorithms = loadAlgorithmsFromJson(context)
+fun CreateOLLScreen(context: Context) {
+    val algorithms = loadAlgorithmsFromJson(context, R.raw.oll_algorithms)
     val groupedAlgorithms = algorithms.groupBy { it.group }
 
     Scaffold(
@@ -73,8 +73,8 @@ fun CreateAlgorithmScreen(context: Context) {
     }
 }
 
-fun loadAlgorithmsFromJson(context: Context): List<Algorithm> {
-    val inputStream = context.resources.openRawResource(R.raw.oll_algorithms)
+fun loadAlgorithmsFromJson(context: Context, jsonResourceId: Int): List<Algorithm> {
+    val inputStream = context.resources.openRawResource(jsonResourceId)
     val reader = InputStreamReader(inputStream)
     val type = object : TypeToken<List<Algorithm>>() {}.type
     return Gson().fromJson(reader, type)
