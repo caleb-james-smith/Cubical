@@ -39,8 +39,8 @@ class MainActivity : ComponentActivity() {
                 NavHost(navController, startDestination = "home") {
                     composable("home") { HomeScreen(navController) }
 //                    composable("moveNotation") { MoveNotationScreen() }
-                    composable("ollScreen") { CreateOLLScreen(context) }
-                    composable("pllScreen") { CreatePLLScreen(context) }
+                    composable("ollScreen") { CreateOLLScreen(context, navController) }
+                    composable("pllScreen") { CreatePLLScreen(context, navController) }
                 }
             }
         }
