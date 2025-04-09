@@ -10,10 +10,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.Modifier
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import com.example.cubical.ui.theme.CubicalTheme
 import com.example.cubical.algorithm.Algorithm
 import com.example.cubical.algorithm.AlgorithmScreen
 import com.example.cubical.algorithm.AlgorithmGroup
+import com.example.cubical.algorithm.HomeScreen
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -24,9 +28,16 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            val navController = rememberNavController()
             CubicalTheme {
-                Surface {
+                /*Surface {
                     CreateAlgorithmScreen(context = LocalContext.current)
+                }*/
+                NavHost(navController, startDestination = "home") {
+                    composable("home") { HomeScreen(navController) }
+//                    composable("moveNotation") { MoveNotationScreen() }
+                    composable("ollScreen") { CreateAlgorithmScreen(context = LocalContext.current) } // OLL screen; please change name
+//                    composable("pllScreen") { PllScreen() }
                 }
             }
         }
