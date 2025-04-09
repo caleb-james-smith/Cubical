@@ -47,64 +47,6 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-/*@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun CreateOLLScreen(context: Context) {
-    val algorithms = loadAlgorithmsFromJson(context, R.raw.oll_algorithms)
-    val groupedAlgorithms = algorithms.groupBy { it.group }
-
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                title = { Text("OLL Algorithms") }
-            )
-        }
-    ) { paddingValues ->
-        *//*AlgorithmScreen(
-            algorithms = algorithms,
-            modifier = Modifier.padding(paddingValues)
-        )*//*
-        LazyColumn(
-            modifier = Modifier.padding(paddingValues)
-        ) {
-            groupedAlgorithms.forEach { (groupName, algorithms) ->
-                item {
-                    AlgorithmGroup(groupName = groupName, algorithms = algorithms)
-                }
-            }
-        }
-    }
-}*/
-
-/*@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun CreatePLLScreen(context: Context) {
-    val algorithms = loadAlgorithmsFromJson(context, R.raw.pll_algorithms)
-    val groupedAlgorithms = algorithms.groupBy { it.group }
-
-    Scaffold(
-        topBar = {
-            TopAppBar(
-                title = { Text("PLL Algorithms") }
-            )
-        }
-    ) { paddingValues ->
-        *//*AlgorithmScreen(
-            algorithms = algorithms,
-            modifier = Modifier.padding(paddingValues)
-        )*//*
-        LazyColumn(
-            modifier = Modifier.padding(paddingValues)
-        ) {
-            groupedAlgorithms.forEach { (groupName, algorithms) ->
-                item {
-                    AlgorithmGroup(groupName = groupName, algorithms = algorithms)
-                }
-            }
-        }
-    }
-}*/
-
 fun loadAlgorithmsFromJson(context: Context, jsonResourceId: Int): List<Algorithm> {
     return try {
         val inputStream = context.resources.openRawResource(jsonResourceId)
