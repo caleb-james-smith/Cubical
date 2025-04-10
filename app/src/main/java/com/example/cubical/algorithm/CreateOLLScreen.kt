@@ -33,10 +33,6 @@ fun CreateOLLScreen(context: Context, navController: NavController) {
             )
         }
     ) { paddingValues ->
-        /*AlgorithmScreen(
-            algorithms = algorithms,
-            modifier = Modifier.padding(paddingValues)
-        )*/
         LazyColumn(
             modifier = Modifier.padding(paddingValues)
         ) {
