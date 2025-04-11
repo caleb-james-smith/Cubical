@@ -28,7 +28,8 @@ class MainActivity : ComponentActivity() {
             CubicalTheme {
                 NavHost(navController, startDestination = "home") {
                     composable("home") { HomeScreen(navController) }
-//                    composable("moveNotation") { MoveNotationScreen() }
+                    // TODO: Implement move notation screen
+                    // composable("moveNotation") { MoveNotationScreen(context, navController) }
                     composable("ollScreen") { CreateOLLScreen(context, navController) }
                     composable("pllScreen") { CreatePLLScreen(context, navController) }
                 }
