@@ -36,25 +36,42 @@ fun CreateOLLScreen(context: Context, navController: NavController) {
                 }
             )
         }
-    ) { paddingValues ->
+    ) { innerPadding ->
+//    ) { paddingValues ->
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 8.dp)
-                .padding(top = paddingValues.calculateTopPadding())
+                .padding(top = innerPadding.calculateTopPadding())
+//                .padding(horizontal = 8.dp)
+//                .padding(top = paddingValues.calculateTopPadding())
         ) {
             Text(
-                text = "Total Algorithms: ${algorithms.size}",
+                text = "Number of algorithms: ${algorithms.size}",
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(8.dp),
-                fontSize = 16.sp,
+                fontSize = 20.sp,
                 fontWeight = FontWeight.Medium,
                 textAlign = TextAlign.Left
             )
 
+//            Spacer(modifier = Modifier.height(8.dp))
+
+            Text(
+                text = "Number of groups: ${groupedAlgorithms.size}",
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(8.dp),
+                fontSize = 20.sp,
+                fontWeight = FontWeight.Medium,
+                textAlign = TextAlign.Left
+            )
+
+            Spacer(modifier = Modifier.height(8.dp))
+
             LazyColumn(
-                modifier = Modifier.padding(paddingValues)
+                modifier = Modifier.fillMaxSize()
+//                modifier = Modifier.padding(paddingValues)
             ) {
                 groupedAlgorithms.forEach { (groupName, algorithms) ->
                     item {
