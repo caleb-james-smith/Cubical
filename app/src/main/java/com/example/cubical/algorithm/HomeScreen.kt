@@ -20,7 +20,17 @@ import com.example.cubical.R
 fun HomeScreen(navController: NavController) {
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("Cubical") })
+            CenterAlignedTopAppBar (
+                title = {
+                    Text(
+                        text = "Cubical",
+                        fontSize = 48.sp,
+                        fontWeight = FontWeight.Bold,
+                        textAlign = TextAlign.Center,
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
+            )
         }
     ) { paddingValues ->
         Column(
