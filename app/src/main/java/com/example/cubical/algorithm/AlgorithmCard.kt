@@ -1,6 +1,5 @@
 package com.example.cubical.algorithm
 
-import com.example.cubical.R
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -13,6 +12,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.font.*
 import androidx.compose.ui.text.style.*
 import androidx.compose.ui.layout.ContentScale
+import com.example.cubical.R
 
 @Composable
 fun AlgorithmCard(algorithm: Algorithm) {
