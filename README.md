@@ -2,6 +2,13 @@
 
 Rubik's Cube Algorithm Android app built using Android Studio, Kotlin, and Jetpack Compose.
 
+## Image credit
+
+Image credit:
+- Black and white OLL images: post [here](https://www.reddit.com/r/Cubers/comments/fasyjp/a_customizable_and_printable_oll_cheat_sheet/) and shared folder [here](https://drive.google.com/drive/folders/1h1-GcQoMm-jq69Iz5cCoAJIHs-_CqNmD)
+- App icon v1: [here](https://www.etsy.com/listing/478040894/rubiks-cube-screen-print-black-and-white)
+- App icon v2: [here](https://tex.stackexchange.com/questions/459254/easy-way-to-generate-rubiks-cube-diagrams)
+
 ## Test app on an Android phone
 
 To test your app on an Android phone (for example, Google Pixel 7) by connecting to your computer (for example, Macbook),
